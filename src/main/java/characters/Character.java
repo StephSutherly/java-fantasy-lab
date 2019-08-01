@@ -40,7 +40,8 @@ public abstract class Character {
     }
 
     public void defend(Character opponent) {
-        int defendingTotal = this.healthPoints;
+        PlayerAttribute opponentAttr = opponent.getAttribute();
+        this.healthPoints += opponentAttr.getBaseAffect();
     }
 
 }

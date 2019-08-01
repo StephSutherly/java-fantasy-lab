@@ -18,10 +18,6 @@ public class Elf extends Character {
     }
 
 //
-//    public void defend(Character opponent) {
-//        this.extra.getBaseAffect();
-//    }
-
 //    dodge()
 
 }

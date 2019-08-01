@@ -39,6 +39,12 @@ public class DwarfTest {
     }
 
     @Test
+    public void canDefendWithoutExtraAttr() {
+        dwarf.defend(elf);
+        assertEquals(96, dwarf.getHealthPoints());
+    }
+
+    @Test
     public void hasNoExtrasAtStart() {
         assertNull(dwarf.getExtra());
     }

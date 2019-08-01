@@ -18,8 +18,4 @@ public class Dwarf extends Character {
         this.extra = extra;
     }
 
-    public void defend(Character opponent) {
-        this.extra.getBaseAffect();
-    }
-
 }
