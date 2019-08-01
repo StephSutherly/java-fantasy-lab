@@ -11,7 +11,10 @@ public enum PlayerAttribute {
 
     HELMET(2),
     SHEILD( 1),
-    CLOAK(2);
+    CLOAK(2),
+
+//    Enemy attacks
+    SLIMYFINGERS(-2);
 
     private final int baseAffectOnHP;
 
