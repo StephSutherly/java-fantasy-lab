@@ -17,6 +17,15 @@ public class Elf extends Character {
         this.extra = extra;
     }
 
+    public void defend(Character opponent) {
+        PlayerAttribute opponentWeapon = opponent.getAttribute();
+        PlayerAttribute extra = (PlayerAttribute.SHEILD);
+        int defendingPoints = getHealthPoints() + extra.getBaseAffect();
+        int result = defendingPoints + opponentWeapon.getBaseAffect();
+        setHealthPoints(result);
+
+    }
+
 //
 //    dodge()
 

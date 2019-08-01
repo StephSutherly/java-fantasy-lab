@@ -38,11 +38,12 @@ public class DwarfTest {
         assertEquals(73, elf.getHealthPoints());
     }
 
-    @Test
-    public void canDefendWithoutExtraAttr() {
-        dwarf.defend(elf);
-        assertEquals(96, dwarf.getHealthPoints());
-    }
+//    Testing abstract class
+//    @Test
+//    public void canDefendWithoutExtraAttr() {
+//        dwarf.defend(elf);
+//        assertEquals(96, dwarf.getHealthPoints());
+//    }
 
     @Test
     public void hasNoExtrasAtStart() {
@@ -53,6 +54,12 @@ public class DwarfTest {
     public void canSetExtra(){
         dwarf.setExtra(PlayerAttribute.HELMET);
         assertEquals(PlayerAttribute.HELMET, dwarf.getExtra());
+    }
+
+    @Test
+    public void canDefendWithExtra() {
+        dwarf.defend(elf);
+        assertEquals(98, dwarf.getHealthPoints());
     }
 
 //    @Test

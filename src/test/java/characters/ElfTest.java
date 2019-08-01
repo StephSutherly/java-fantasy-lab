@@ -39,9 +39,9 @@ public class ElfTest {
     }
 
     @Test
-    public void canDefend() {
+    public void canDefendWithExtra() {
         elf.defend(dwarf);
-        assertEquals(73, elf.getHealthPoints());
+        assertEquals(74, elf.getHealthPoints());
     }
 
     @Test
