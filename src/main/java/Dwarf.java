@@ -12,4 +12,16 @@ public class Dwarf extends Fighter {
         return weapon.getBaseAffect();
     }
 
+    public PlayerAttribute getExtra() {
+        return this.extra;
+    }
+
+    public void setExtra(PlayerAttribute extra) {
+        this.extra = extra;
+    }
+
+    public int defend() {
+        return this.extra.getBaseAffect();
+    }
+
 }
