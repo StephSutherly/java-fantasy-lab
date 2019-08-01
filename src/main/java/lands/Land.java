@@ -28,4 +28,12 @@ public abstract class Land {
         return players;
     }
 
+    public int playerCount() {
+        return this.players.size();
+    }
+
+    public void addPlayer(Character player) {
+        this.players.add(player);
+    }
+
 }
