@@ -29,7 +29,7 @@ public class ElfTest {
 
     @Test
     public void hasAWeapon() {
-        assertEquals(PlayerAttribute.BOWARROW, elf.getWeapon());
+        assertEquals(PlayerAttribute.BOWARROW, elf.getAttribute());
     }
 
     @Test

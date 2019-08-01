@@ -1,6 +1,6 @@
 package characters;
 
-public class Dwarf extends Fighter {
+public class Dwarf extends Character {
 
     private PlayerAttribute weapon;
     private PlayerAttribute extra;

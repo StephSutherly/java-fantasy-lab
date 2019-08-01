@@ -22,6 +22,14 @@ public abstract class Character {
         return healthPoints;
     }
 
+    public PlayerAttribute getAttribute() {
+        return this.attribute;
+    }
+
+    public void setAttribute(PlayerAttribute attribute) {
+        this.attribute = attribute;
+    }
+
     public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
     }
@@ -31,6 +39,8 @@ public abstract class Character {
         opponent.setHealthPoints(attackOutCome);
     }
 
-//    public abstract void defend(Character opponent);
+    public void defend(Character opponent) {
+        int defendingTotal = this.healthPoints;
+    }
 
 }

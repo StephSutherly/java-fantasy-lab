@@ -1,6 +1,6 @@
 package characters;
 
-public class Elf extends Fighter {
+public class Elf extends Character {
 
     private PlayerAttribute extra;
 
