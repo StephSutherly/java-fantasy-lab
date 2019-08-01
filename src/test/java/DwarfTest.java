@@ -10,7 +10,7 @@ public class DwarfTest {
 
     @Before
     public void setUp() {
-        dwarf = new Dwarf("Gimli", 100, PlayerAttribute.AXE);
+        dwarf = new Dwarf ("Gimli", 100, PlayerAttribute.AXE);
     }
 
     @Test
