@@ -1,3 +1,5 @@
+package characters;
+
 public class Dwarf extends Fighter {
 
     private PlayerAttribute weapon;
@@ -8,10 +10,6 @@ public class Dwarf extends Fighter {
         this.extra = null;
     }
 
-    public int attack(PlayerAttribute weapon) {
-        return weapon.getBaseAffect();
-    }
-
     public PlayerAttribute getExtra() {
         return this.extra;
     }
@@ -20,8 +18,8 @@ public class Dwarf extends Fighter {
         this.extra = extra;
     }
 
-    public int defend() {
-        return this.extra.getBaseAffect();
+    public void defend(Character opponent) {
+        this.extra.getBaseAffect();
     }
 
 }

@@ -1,3 +1,5 @@
+package characters;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -7,10 +9,12 @@ import static org.junit.Assert.assertNull;
 public class ElfTest {
 
     Elf elf;
+    Dwarf dwarf;
 
     @Before
     public void setUp() {
         elf = new Elf("Legolas", 80, PlayerAttribute.BOWARROW);
+        dwarf = new Dwarf ("Gimli", 100, PlayerAttribute.AXE);
     }
 
     @Test
@@ -24,8 +28,14 @@ public class ElfTest {
     }
 
     @Test
+    public void hasAWeapon() {
+        assertEquals(PlayerAttribute.BOWARROW, elf.getWeapon());
+    }
+
+    @Test
     public void canAttack() {
-        assertEquals(-4, elf.attack(PlayerAttribute.BOWARROW));
+        elf.attack(dwarf);
+        assertEquals(96, dwarf.getHealthPoints());
     }
 
     @Test
@@ -39,11 +49,11 @@ public class ElfTest {
         assertEquals(PlayerAttribute.SHEILD, elf.getExtra());
     }
 
-    @Test
-    public void extraHasAffect() {
-        elf.setExtra(PlayerAttribute.SHEILD);
-        assertEquals(1, elf.defend());
-    }
+//    @Test
+//    public void extraHasAffect() {
+//        elf.setExtra(PlayerAttribute.SHEILD);
+//        assertEquals(1, elf.defend());
+//    }
 
 //    @Test
 //    public void canDodge() {

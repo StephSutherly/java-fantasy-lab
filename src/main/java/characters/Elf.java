@@ -1,15 +1,12 @@
+package characters;
+
 public class Elf extends Fighter {
 
-    private PlayerAttribute weapon;
     private PlayerAttribute extra;
 
     public Elf(String name, int healthPoints, PlayerAttribute weapon) {
         super(name, healthPoints, weapon);
         this.extra = null;
-    }
-
-    public int attack(PlayerAttribute weapon) {
-        return weapon.getBaseAffect();
     }
 
     public PlayerAttribute getExtra() {
@@ -20,10 +17,11 @@ public class Elf extends Fighter {
         this.extra = extra;
     }
 
-    public int defend() {
-        return this.extra.getBaseAffect();
-    }
+//
+//    public void defend(Character opponent) {
+//        this.extra.getBaseAffect();
+//    }
 
-//    dodge() 
+//    dodge()
 
 }

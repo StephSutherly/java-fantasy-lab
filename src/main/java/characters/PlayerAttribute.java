@@ -1,3 +1,5 @@
+package characters;
+
 public enum PlayerAttribute {
 
 //    Weapons
