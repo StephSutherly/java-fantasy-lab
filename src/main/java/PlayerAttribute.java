@@ -3,15 +3,21 @@ public enum PlayerAttribute {
 //    Weapons
     SWORD(-5),
     AXE(-7),
-    BOWARROW(-4);
+    BOWARROW(-4),
 
-    private final int baseAffect;
+// Extra affects
 
-    PlayerAttribute(int baseAffect) {
-        this.baseAffect = baseAffect;
+    HELMET(2),
+    SHEILD( 1),
+    CLOAK(2);
+
+    private final int baseAffectOnHP;
+
+    PlayerAttribute(int baseAffectOnHP) {
+        this.baseAffectOnHP = baseAffectOnHP;
     }
 
     public int getBaseAffect() {
-        return baseAffect;
+        return baseAffectOnHP;
     }
 }

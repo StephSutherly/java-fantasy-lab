@@ -15,5 +15,5 @@ public abstract class Fighter extends Player {
         this.weapon = weapon;
     }
 
-    abstract public int attack();
+    abstract public int attack(PlayerAttribute weapon);
 }
